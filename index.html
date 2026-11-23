@@ -1,0 +1,1263 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>影视大全在线观看免费 | 高清正版片库·官方视频门户</title>
+<meta name="description" content="影视大全在线观看免费官方网站视频门户，聚合高清正版电影、剧集、纪录片与短片内容，连接专业创作者与影视爱好者，打造值得信赖的品质内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314161c'/%3E%3Cpath d='M18 20h8v24h-8zM30 20l18 12-18 12z' fill='%23f0b429'/%3E%3C/svg%3E">
+<style>
+:root{
+  --vdark:#12141b;
+  --vdarker:#0b0d12;
+  --vpanel:#191c26;
+  --vpanel2:#20243058;
+  --vline:#2b3040;
+  --vtext:#e9ebf2;
+  --vsub:#a2a9bd;
+  --vfaint:#767e94;
+  --vneon:#38e0c8;
+  --vneon2:#7cf0b8;
+  --vgold:#f0b429;
+  --vred:#ff5470;
+  --vradius:14px;
+  --vhead-h:118px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--vdark);
+  color:var(--vtext);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  background-image:
+    radial-gradient(900px 400px at 82% -8%, #1e3d3a55, transparent 60%),
+    radial-gradient(700px 380px at 0% 12%, #2a2f4a55, transparent 62%);
+  background-attachment:fixed;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+
+/* ===== 吸顶公告条 + 页头 ===== */
+.vd-stickywrap{
+  position:sticky;top:0;z-index:120;
+  background:rgba(11,13,18,.94);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--vline);
+}
+.vd-announce{
+  display:flex;align-items:center;gap:12px;
+  padding:7px 22px;
+  background:linear-gradient(90deg,#0f3b34,#153f4a 55%,#1a3347);
+  font-size:13px;color:#c9f5ec;
+  border-bottom:1px solid #1d4a52;
+  overflow:hidden;
+}
+.vd-announce-badge{
+  flex:0 0 auto;
+  background:var(--vneon);color:#06211d;
+  font-size:11px;font-weight:800;letter-spacing:.06em;
+  padding:2px 8px;border-radius:4px;
+}
+.vd-announce-track{display:flex;gap:34px;overflow:hidden;white-space:nowrap;flex:1}
+.vd-announce-track span{opacity:.92}
+.vd-announce-track b{color:var(--vneon2);font-weight:600}
+.vd-announce-close{
+  flex:0 0 auto;width:22px;height:22px;line-height:1;
+  border:1px solid #2e6a66;border-radius:50%;color:#9fd8cf;font-size:12px;
+}
+.vd-announce-close:hover{background:#1e5a55;color:#fff}
+
+.vd-header{
+  display:flex;align-items:center;gap:18px;
+  padding:12px 22px;
+  max-width:1280px;margin:0 auto;
+  position:relative;
+}
+.vd-logo{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.vd-logo-mark{
+  width:40px;height:40px;border-radius:11px;
+  background:conic-gradient(from 210deg,#38e0c8,#2d7bff,#f0b429,#38e0c8);
+  display:grid;place-items:center;
+  box-shadow:0 0 0 1px #ffffff1f, 0 6px 18px #38e0c83d;
+}
+.vd-logo-mark svg{width:20px;height:20px}
+.vd-logo-text{font-size:19px;font-weight:800;letter-spacing:.02em;line-height:1.15}
+.vd-logo-text small{display:block;font-size:10px;font-weight:500;color:var(--vfaint);letter-spacing:.18em}
+.vd-nav{display:flex;gap:4px;margin-left:10px;flex-wrap:wrap}
+.vd-nav a{
+  font-size:14px;color:var(--vsub);padding:7px 11px;border-radius:8px;
+  transition:.2s;white-space:nowrap;
+}
+.vd-nav a:hover,.vd-nav a.is-active{color:var(--vtext);background:var(--vpanel);box-shadow:inset 0 0 0 1px var(--vline)}
+.vd-search{
+  margin-left:auto;display:flex;align-items:center;gap:8px;
+  background:var(--vpanel);border:1px solid var(--vline);border-radius:999px;
+  padding:6px 6px 6px 14px;min-width:230px;
+}
+.vd-search input{
+  background:none;border:none;outline:none;color:var(--vtext);
+  font-size:13.5px;width:150px;
+}
+.vd-search input::placeholder{color:var(--vfaint)}
+.vd-search button{
+  width:30px;height:30px;border-radius:50%;
+  background:var(--vneon);color:#06211d;display:grid;place-items:center;font-size:13px;font-weight:800;
+}
+.vd-search-tip{
+  position:absolute;right:22px;top:calc(100% - 4px);
+  background:var(--vpanel);border:1px solid var(--vline);border-radius:10px;
+  padding:8px 12px;font-size:12.5px;color:var(--vneon2);display:none;z-index:130;
+  box-shadow:0 14px 30px #00000080;
+}
+.vd-search-tip.is-show{display:block}
+.vd-burger{
+  display:none;width:40px;height:38px;border-radius:9px;
+  border:1px solid var(--vline);background:var(--vpanel);font-size:15px;
+}
+.vd-mobile-nav{
+  display:none;flex-direction:column;gap:2px;
+  padding:8px 16px 16px;border-top:1px solid var(--vline);
+}
+.vd-mobile-nav a{padding:10px 12px;border-radius:8px;font-size:14.5px;color:var(--vsub)}
+.vd-mobile-nav a:hover{background:var(--vpanel);color:var(--vtext)}
+.vd-mobile-nav.is-open{display:flex}
+
+/* ===== 通用容器/标题 ===== */
+.vd-main{max-width:1280px;margin:0 auto;padding:0 22px 30px}
+.vd-section{padding:52px 0 8px;scroll-margin-top:calc(var(--vhead-h) + 18px)}
+.vd-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;letter-spacing:.2em;color:var(--vneon);
+  text-transform:uppercase;margin-bottom:12px;font-weight:700;
+}
+.vd-eyebrow::before{content:"";width:22px;height:2px;background:var(--vneon);display:block}
+.vd-h2{font-size:clamp(23px,3vw,32px);line-height:1.3;letter-spacing:-.01em;margin-bottom:10px;font-weight:800}
+.vd-h2 em{font-style:normal;color:var(--vneon)}
+.vd-lead{color:var(--vsub);font-size:15px;max-width:760px;margin-bottom:26px}
+
+/* ===== 首屏 5:5 大幅图文 ===== */
+.vd-hero{
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:34px;align-items:center;padding:44px 0 18px;
+}
+.vd-hero-copy{min-width:0}
+.vd-hero-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1px solid #2a6a63;background:#12332f;color:var(--vneon2);
+  font-size:12px;font-weight:600;padding:4px 12px;border-radius:999px;margin-bottom:18px;
+}
+.vd-h1{
+  font-size:clamp(30px,4.4vw,50px);line-height:1.16;font-weight:800;letter-spacing:-.02em;
+  margin-bottom:18px;
+}
+.vd-h1 span{
+  background:linear-gradient(96deg,#38e0c8,#7cf0b8 42%,#f0b429);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.vd-hero-intro{
+  color:#c1c7d6;font-size:15px;margin-bottom:22px;border-left:3px solid var(--vneon);
+  padding-left:14px;background:linear-gradient(90deg,#38e0c814,transparent);
+  border-radius:0 8px 8px 0;padding-top:6px;padding-bottom:6px;
+}
+.vd-hero-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;margin:22px 0 26px;
+}
+.vd-stat{
+  background:linear-gradient(160deg,#1b1f2a,#141720);
+  border:1px solid var(--vline);border-radius:var(--vradius);
+  padding:13px 14px;min-width:0;
+}
+.vd-stat b{display:block;font-size:22px;font-weight:800;color:var(--vneon);line-height:1.2;letter-spacing:-.01em}
+.vd-stat span{font-size:12px;color:var(--vfaint);display:block;margin-top:3px}
+.vd-hero-actions{display:flex;flex-wrap:wrap;gap:10px}
+.vd-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:14px;font-weight:700;padding:11px 20px;border-radius:999px;
+  transition:.22s;border:1px solid transparent;
+}
+.vd-btn-primary{background:var(--vneon);color:#06211d;box-shadow:0 8px 22px #38e0c83a}
+.vd-btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px #38e0c855}
+.vd-btn-ghost{border-color:#33405a;color:var(--vtext);background:#191c26}
+.vd-btn-ghost:hover{border-color:var(--vneon);color:var(--vneon2)}
+.vd-hero-figure{
+  position:relative;border-radius:20px;overflow:hidden;
+  border:1px solid #2c3444;box-shadow:0 30px 60px #00000066;
+  background:#10131a;
+}
+.vd-hero-figure img{width:100%;aspect-ratio:16/11;object-fit:cover}
+.vd-hero-play{
+  position:absolute;left:18px;bottom:18px;
+  display:flex;align-items:center;gap:10px;
+  background:#0b0d12c9;border:1px solid #ffffff26;border-radius:12px;
+  padding:8px 14px 8px 8px;backdrop-filter:blur(6px);
+}
+.vd-hero-play i{
+  width:32px;height:32px;border-radius:50%;background:var(--vneon);color:#06211d;
+  display:grid;place-items:center;font-size:13px;font-style:normal;font-weight:800;
+}
+.vd-hero-play div{font-size:12px;line-height:1.35}
+.vd-hero-play div b{display:block;font-size:13px;color:#fff}
+.vd-hero-play div span{color:#9aa3b8}
+
+/* ===== 视频区 三列等高卡片 ===== */
+.vd-video-grid{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+}
+.vd-vcard{
+  min-width:0;background:linear-gradient(170deg,#1a1e28,#13161e);
+  border:1px solid var(--vline);border-radius:var(--vradius);
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:.25s;
+}
+.vd-vcard:hover{transform:translateY(-4px);border-color:#3a6a72;box-shadow:0 18px 34px #00000066}
+.vd-vcover{position:relative;overflow:hidden}
+.vd-vcover img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:.4s}
+.vd-vcard:hover .vd-vcover img{transform:scale(1.045)}
+.vd-vcover-badge{
+  position:absolute;left:10px;top:10px;
+  background:#0b0d12cc;border:1px solid #ffffff2b;border-radius:6px;
+  font-size:11px;padding:2px 8px;color:#e7ecf6;backdrop-filter:blur(4px);
+}
+.vd-vcover-time{
+  position:absolute;right:10px;bottom:10px;
+  background:#0b0d12d9;font-size:11px;padding:1px 7px;border-radius:5px;color:#cfd6e4;
+}
+.vd-vbody{padding:14px 15px 15px;display:flex;flex-direction:column;gap:9px;flex:1}
+.vd-vbody h3{font-size:15.5px;line-height:1.45;font-weight:700}
+.vd-vbody p{font-size:13px;color:var(--vsub);line-height:1.62}
+.vd-tags{display:flex;flex-wrap:wrap;gap:6px}
+.vd-tag{font-size:11px;color:#8fe9db;background:#14362f;border:1px solid #215750;border-radius:999px;padding:1px 9px}
+.vd-meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px;color:var(--vfaint);margin-top:auto}
+.vd-meta b{color:#c8cfdd;font-weight:600}
+.vd-vactions{display:flex;gap:8px;padding-top:10px;border-top:1px dashed #2a3040}
+.vd-chip{
+  font-size:12px;color:var(--vsub);border:1px solid #2f374a;border-radius:999px;
+  padding:4px 11px;display:inline-flex;align-items:center;gap:5px;transition:.2s;
+}
+.vd-chip:hover{border-color:var(--vneon);color:var(--vneon2)}
+.vd-chip.is-liked{background:#123a33;border-color:#2b8b7c;color:var(--vneon)}
+.vd-chip.is-faved{background:#3a2a10;border-color:#a77c1f;color:var(--vgold)}
+
+/* ===== 文字列表条目 ===== */
+.vd-listbox{border:1px solid var(--vline);border-radius:var(--vradius);overflow:hidden;background:#151821}
+.vd-listrow{
+  display:grid;grid-template-columns:34px minmax(0,1fr) auto;
+  gap:14px;align-items:start;padding:15px 18px;border-bottom:1px solid #232837;transition:.2s;
+}
+.vd-listrow:last-child{border-bottom:none}
+.vd-listrow:hover{background:#1b202b}
+.vd-listrow-num{
+  font-size:15px;font-weight:800;color:#3c4a60;
+  font-variant-numeric:tabular-nums;padding-top:2px;
+}
+.vd-listrow h3{font-size:14.5px;font-weight:700;margin-bottom:4px}
+.vd-listrow p{font-size:12.8px;color:var(--vsub);line-height:1.6;margin-bottom:6px}
+.vd-listrow-side{display:flex;flex-direction:column;align-items:flex-end;gap:6px;font-size:11.5px;color:var(--vfaint);white-space:nowrap}
+
+/* ===== 专题 ===== */
+.vd-topics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.vd-topic{
+  background:linear-gradient(150deg,#1b202b,#12151d);
+  border:1px solid var(--vline);border-radius:var(--vradius);
+  padding:18px 18px 14px;min-width:0;
+}
+.vd-topic:first-child{grid-column:1 / -1}
+.vd-topic-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;margin-bottom:6px}
+.vd-topic-head h3{font-size:17px;font-weight:800}
+.vd-topic-state{font-size:11px;color:#0d2a22;background:var(--vneon2);border-radius:4px;padding:1px 8px;font-weight:700}
+.vd-topic-desc{font-size:13.2px;color:var(--vsub);margin-bottom:12px}
+.vd-topic-items{display:grid;gap:7px}
+.vd-topic-items li{
+  font-size:13px;color:#c4cbd9;padding-left:16px;position:relative;
+}
+.vd-topic-items li::before{
+  content:"";position:absolute;left:0;top:9px;width:6px;height:6px;
+  background:var(--vneon);border-radius:2px;transform:rotate(45deg);
+}
+.vd-topic-figure{margin-top:12px;border-radius:10px;overflow:hidden;border:1px solid #2a3344}
+.vd-topic-figure img{width:100%;aspect-ratio:21/9;object-fit:cover}
+
+/* ===== 关键词解析 ===== */
+.vd-essay{
+  background:linear-gradient(170deg,#171b24,#11141b);
+  border:1px solid var(--vline);border-radius:18px;padding:26px 26px 18px;
+}
+.vd-essay h3{font-size:16.5px;margin:20px 0 8px;color:var(--vneon2);font-weight:800}
+.vd-essay h3:first-child{margin-top:0}
+.vd-essay p{font-size:14px;color:#b7bfd0;margin-bottom:10px;line-height:1.85}
+.vd-essay strong{color:#e7ecf6;font-weight:700}
+.vd-inlinequote{
+  border-left:3px solid var(--vgold);background:#1d1a12;
+  padding:10px 14px;border-radius:0 8px 8px 0;color:#e3d2ab;font-size:13.5px;margin:12px 0;
+}
+
+/* ===== 作者区 小型头像列表 ===== */
+.vd-authors{display:grid;gap:12px}
+.vd-author{
+  display:grid;grid-template-columns:54px minmax(0,1fr) auto;
+  gap:14px;align-items:center;
+  background:#161922;border:1px solid var(--vline);border-radius:12px;
+  padding:13px 16px;transition:.22s;
+}
+.vd-author:hover{border-color:#35625f;background:#1a1f29}
+.vd-avatar{
+  width:54px;height:54px;border-radius:50%;
+  display:grid;place-items:center;font-size:18px;font-weight:800;color:#07221e;
+  border:2px solid #ffffff1a;
+}
+.vd-author-name{font-size:14.5px;font-weight:700;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.vd-author-name span{font-size:10.5px;font-weight:600;color:var(--vneon2);background:#133530;border:1px solid #24564e;border-radius:999px;padding:0 7px}
+.vd-author-info{font-size:12.3px;color:var(--vfaint);margin-top:2px}
+.vd-author-bio{font-size:12.6px;color:var(--vsub);margin-top:4px;line-height:1.55}
+.vd-author-btn{font-size:12px;border:1px solid #324054;border-radius:999px;padding:5px 12px;color:var(--vsub);transition:.2s;white-space:nowrap}
+.vd-author-btn:hover{border-color:var(--vneon);color:var(--vneon2)}
+
+/* ===== 评论 双列短评 ===== */
+.vd-comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.vd-comment{
+  background:#151822;border:1px solid var(--vline);border-radius:12px;
+  padding:14px 16px;min-width:0;
+}
+.vd-comment-top{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+.vd-cav{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:800;color:#0a1a18}
+.vd-comment-top b{font-size:13px}
+.vd-comment-top span{font-size:11px;color:var(--vfaint);margin-left:auto}
+.vd-comment p{font-size:13px;color:#bfc6d5;line-height:1.7}
+.vd-stars{color:var(--vgold);font-size:12px;letter-spacing:1px;margin-top:6px}
+
+/* ===== FAQ ===== */
+.vd-faq{display:grid;gap:10px}
+.vd-faq details{
+  background:#161a23;border:1px solid var(--vline);border-radius:11px;
+  padding:0 16px;transition:.2s;
+}
+.vd-faq details[open]{border-color:#2f6a63;background:#182029}
+.vd-faq summary{
+  cursor:pointer;list-style:none;padding:14px 4px;
+  font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:space-between;gap:12px;
+}
+.vd-faq summary::-webkit-details-marker{display:none}
+.vd-faq summary::after{content:"+";color:var(--vneon);font-size:18px;font-weight:700}
+.vd-faq details[open] summary::after{content:"−"}
+.vd-faq p{font-size:13.2px;color:var(--vsub);padding:0 4px 15px;line-height:1.8}
+
+/* ===== 企业动态 ===== */
+.vd-news{display:grid;gap:10px}
+.vd-newsrow{
+  display:grid;grid-template-columns:88px minmax(0,1fr);gap:14px;
+  padding:13px 16px;background:#151922;border:1px solid var(--vline);border-radius:11px;
+}
+.vd-newsrow time{font-size:12px;color:var(--vneon);font-variant-numeric:tabular-nums}
+.vd-newsrow h3{font-size:14px;font-weight:700;margin-bottom:3px}
+.vd-newsrow p{font-size:12.6px;color:var(--vsub)}
+
+/* ===== 合作墙 ===== */
+.vd-partners{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.vd-partner{
+  border:1px solid var(--vline);border-radius:11px;background:#161a23;
+  padding:16px 12px;text-align:center;transition:.2s;
+}
+.vd-partner:hover{border-color:#3a6a72;background:#1b2029}
+.vd-partner b{display:block;font-size:13.5px;margin-bottom:3px}
+.vd-partner span{font-size:11.5px;color:var(--vfaint)}
+
+/* ===== 联系投稿 ===== */
+.vd-connect{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;
+}
+.vd-connect-card{
+  background:linear-gradient(160deg,#1a2130,#131722);
+  border:1px solid var(--vline);border-radius:13px;padding:18px;
+}
+.vd-connect-card h3{font-size:14.5px;margin-bottom:7px}
+.vd-connect-card p{font-size:12.8px;color:var(--vsub);margin-bottom:11px}
+.vd-mini-link{font-size:12.5px;color:var(--vneon);font-weight:600}
+.vd-mini-link:hover{color:var(--vneon2)}
+
+/* ===== 页脚 ===== */
+.vd-footer{
+  border-top:1px solid var(--vline);background:#0a0c11;margin-top:40px;
+  padding:40px 22px 26px;
+}
+.vd-footer-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px}
+.vd-footer h4{font-size:13px;letter-spacing:.1em;color:#cdd4e2;margin-bottom:11px;font-weight:700}
+.vd-footer p,.vd-footer li{font-size:12.5px;color:var(--vfaint);line-height:1.9}
+.vd-footer a:hover{color:var(--vneon2)}
+.vd-footer-bottom{
+  max-width:1280px;margin:26px auto 0;padding-top:16px;border-top:1px solid #1d212b;
+  display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-between;
+  font-size:12px;color:#5f6980;
+}
+
+/* ===== 悬浮交互 ===== */
+.vd-totop{
+  position:fixed;right:20px;bottom:22px;z-index:110;
+  width:44px;height:44px;border-radius:50%;
+  background:var(--vneon);color:#06211d;font-size:16px;font-weight:800;
+  display:none;place-items:center;box-shadow:0 10px 24px #38e0c850;
+}
+.vd-totop.is-show{display:grid}
+.vd-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:#0f1a19;border:1px solid #2e8b7d;color:#b9f5ea;
+  padding:10px 20px;border-radius:999px;font-size:13px;z-index:200;
+  opacity:0;pointer-events:none;transition:.3s;box-shadow:0 12px 30px #00000088;
+}
+.vd-toast.is-show{opacity:1;transform:translate(-50%,0)}
+.vd-modal{
+  position:fixed;inset:0;z-index:190;display:none;
+  background:#05070ac9;backdrop-filter:blur(4px);
+  padding:20px;overflow:auto;
+}
+.vd-modal.is-open{display:grid;place-items:center}
+.vd-modal-card{
+  width:min(520px,100%);background:#161a23;border:1px solid #2f3a4d;border-radius:16px;
+  padding:24px;box-shadow:0 30px 60px #000000aa;
+}
+.vd-modal-card h3{font-size:18px;margin-bottom:8px}
+.vd-modal-card p{font-size:13.5px;color:var(--vsub);margin-bottom:14px}
+.vd-modal-card label{display:block;font-size:12.5px;color:var(--vfaint);margin:10px 0 4px}
+.vd-modal-card input,.vd-modal-card textarea,.vd-modal-card select{
+  width:100%;background:#10131a;border:1px solid #2c3546;border-radius:9px;
+  padding:9px 11px;color:var(--vtext);font-size:13px;outline:none;font-family:inherit;
+}
+.vd-modal-card input:focus,.vd-modal-card textarea:focus{border-color:var(--vneon)}
+.vd-modal-actions{display:flex;gap:10px;margin-top:18px;justify-content:flex-end}
+
+@media (max-width:1024px){
+  .vd-footer-inner{grid-template-columns:1fr 1fr}
+  .vd-hero{grid-template-columns:1fr;gap:22px}
+  .vd-video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .vd-partners{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .vd-connect{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  :root{--vhead-h:104px}
+  .vd-nav,.vd-search{display:none}
+  .vd-burger{display:block;margin-left:auto}
+  .vd-hero-stats{grid-template-columns:1fr 1fr}
+  .vd-video-grid,.vd-topics,.vd-comments,.vd-connect{grid-template-columns:1fr}
+  .vd-topic:first-child{grid-column:auto}
+  .vd-footer-inner{grid-template-columns:1fr}
+  .vd-announce-track{overflow-x:auto;scrollbar-width:none}
+  .vd-announce-track::-webkit-scrollbar{display:none}
+  .vd-listrow{grid-template-columns:26px minmax(0,1fr)}
+  .vd-listrow-side{grid-column:2;flex-direction:row;align-items:center;gap:12px}
+  .vd-author{grid-template-columns:46px minmax(0,1fr);gap:12px}
+  .vd-author-btn{grid-column:2;justify-self:start}
+  .vd-avatar{width:46px;height:46px;font-size:16px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- S1 公告条 + 页头（吸顶） -->
+<div class="vd-stickywrap">
+  <div class="vd-announce" id="vdAnnounce">
+    <span class="vd-announce-badge">更新</span>
+    <div class="vd-announce-track">
+      <span><b>11·21</b> 新增「城市夜行者」系列 12 集高清片源</span>
+      <span><b>11·20</b> 纪录片专区上线 8 部原创短片</span>
+      <span><b>11·19</b> 冬季影展征片开启，报名通道已发布</span>
+      <span><b>11·18</b> 播放器支持 1080P 多码率自适应</span>
+    </div>
+    <button class="vd-announce-close" id="vdAnnounceClose" aria-label="关闭公告">✕</button>
+  </div>
+
+  <header class="vd-header">
+    <a class="vd-logo" href="#vdTop" aria-label="影视大全在线观看免费官方首页">
+      <span class="vd-logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M6 5h4v14H6z" fill="#06211d"/><path d="M12 5l7 7-7 7z" fill="#06211d"/></svg>
+      </span>
+      <span class="vd-logo-text">影视大全<small>ONLINE CINEMA</small></span>
+    </a>
+    <nav class="vd-nav" aria-label="主导航">
+      <a href="#vdVideos" class="is-active">片库</a>
+      <a href="#vdTopics">专题企划</a>
+      <a href="#vdInsight">关键词解析</a>
+      <a href="#vdCreators">创作者</a>
+      <a href="#vdReviews">口碑</a>
+      <a href="#vdNews">企业动态</a>
+      <a href="#vdFaq">帮助</a>
+    </nav>
+    <div class="vd-search" role="search">
+      <input type="search" id="vdSearchInput" placeholder="搜索片名 / 创作者 / 标签" aria-label="站内搜索">
+      <button type="button" id="vdSearchBtn" aria-label="搜索">搜</button>
+    </div>
+    <button class="vd-burger" id="vdBurger" aria-label="展开导航" aria-expanded="false">☰</button>
+    <div class="vd-search-tip" id="vdSearchTip" role="status"></div>
+  </header>
+  <div class="vd-mobile-nav" id="vdMobileNav">
+    <a href="#vdVideos">片库精选</a>
+    <a href="#vdTopics">专题企划</a>
+    <a href="#vdInsight">关键词解析</a>
+    <a href="#vdCreators">创作者矩阵</a>
+    <a href="#vdReviews">用户口碑</a>
+    <a href="#vdNews">企业动态</a>
+    <a href="#vdFaq">常见问题</a>
+  </div>
+</div>
+
+<main class="vd-main" id="vdTop">
+
+  <!-- S2 品牌首屏 5:5 -->
+  <section class="vd-hero" aria-labelledby="vdHeroTitle">
+    <div class="vd-hero-copy">
+      <span class="vd-hero-tag">● 官方网站 · 高清正版片库 · 持续运营中</span>
+      <h1 class="vd-h1" id="vdHeroTitle">影视大全<span>在线观看免费</span></h1>
+      <p class="vd-hero-intro">
+        作为深耕影视内容领域的视频品牌，影视大全在线观看免费官方网站聚合电影、剧集、纪录片与原创短片，
+        以高清、正版、专业的选片机制连接创作者与观众，让每一次播放都值得信赖。
+      </p>
+      <p style="color:#a6aec1;font-size:14px;margin-bottom:6px;">
+        平台自建立以来坚持用户至上与匠心选片，累计合作创作者超三千位，形成覆盖拍摄、剪辑、配乐、影评的完整内容生态。
+        我们相信影像的力量来自真实与陪伴，因此把社区共建写进产品逻辑：每一条评论、每一次投稿、每一场线上影展，都会进入官方的选题与运营视野，
+        让「影视大全在线观看免费」不只是一个入口，而是一个持续成长的影像社区。
+      </p>
+      <div class="vd-hero-stats">
+        <div class="vd-stat"><b>12,800+</b><span>正版高清片源</span></div>
+        <div class="vd-stat"><b>3,200</b><span>合作创作者</span></div>
+        <div class="vd-stat"><b>9.4 分</b><span>社区口碑评分</span></div>
+      </div>
+      <div class="vd-hero-actions">
+        <a class="vd-btn vd-btn-primary" href="#vdVideos">进入片库 ▶</a>
+        <a class="vd-btn vd-btn-ghost" href="#vdCreators">认识创作者</a>
+        <button class="vd-btn vd-btn-ghost" type="button" data-vd-open="submit">我要投稿</button>
+      </div>
+    </div>
+    <figure class="vd-hero-figure">
+      <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 550'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%230b1a2c'/%3E%3Cstop offset='.55' stop-color='%23123245'/%3E%3Cstop offset='1' stop-color='%232b5b5c'/%3E%3C/linearGradient%3E%3ClinearGradient id='glow' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%2338e0c8'/%3E%3Cstop offset='1' stop-color='%23f0b429'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='550' fill='url(%23sky)'/%3E%3Ccircle cx='640' cy='110' r='64' fill='%23f0b429' opacity='.22'/%3E%3Ccircle cx='640' cy='110' r='30' fill='%23f6d98a' opacity='.75'/%3E%3Cpath d='M0 380 L120 300 L230 350 L340 260 L470 330 L600 250 L800 340 L800 550 L0 550 Z' fill='%230c1722'/%3E%3Cpath d='M0 440 L140 380 L280 430 L420 360 L560 420 L700 355 L800 400 L800 550 L0 550 Z' fill='%230f1e28' opacity='.95'/%3E%3Cg fill='%2338e0c8' opacity='.85'%3E%3Crect x='190' y='300' width='4' height='60'/%3E%3Crect x='214' y='280' width='4' height='80'/%3E%3Crect x='238' y='310' width='4' height='50'/%3E%3Crect x='262' y='266' width='4' height='94'/%3E%3Crect x='286' y='296' width='4' height='64'/%3E%3C/g%3E%3Cg opacity='.5' fill='%23a8c6ff'%3E%3Ccircle cx='120' cy='90' r='2'/%3E%3Ccircle cx='300' cy='60' r='2'/%3E%3Ccircle cx='420' cy='130' r='2'/%3E%3Ccircle cx='520' cy='70' r='2'/%3E%3Ccircle cx='700' cy='200' r='2'/%3E%3C/g%3E%3Crect x='330' y='120' width='150' height='96' rx='8' fill='none' stroke='url(%23glow)' stroke-width='2' opacity='.8'/%3E%3Cpath d='M388 148 L388 188 L422 168 Z' fill='%23ffffff' opacity='.9'/%3E%3Ctext x='48' y='510' font-family='Arial' font-size='26' fill='%23e7f6f2' opacity='.9' letter-spacing='4'%3ECINEMA NIGHTS%3C/text%3E%3C/svg%3E" alt="影视大全在线观看免费首屏主视觉：夜色影院山脊与播放窗口构图" width="800" height="550">
+      <figcaption class="vd-hero-play">
+        <i>▶</i>
+        <div><b>本周主推 · 夜行者</b><span>原创纪录短片 · 1080P 高清</span></div>
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- S3 视频区：三列等高卡片 + 文字列表 -->
+  <section class="vd-section" id="vdVideos" aria-labelledby="vdVideosTitle">
+    <span class="vd-eyebrow">Library · 精品内容</span>
+    <h2 class="vd-h2" id="vdVideosTitle">影视大全在线观看免费 <em>片库精选</em></h2>
+    <p class="vd-lead">
+      每一个条目都由官方选片组与社区创作者共建，标注类型、时长与来源，方便你按心情与时间快速选择。
+      视频区持续更新，欢迎在搜索结果里直接反馈想看的内容。
+    </p>
+
+    <div class="vd-video-grid">
+      <article class="vd-vcard">
+        <div class="vd-vcover">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='a1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231b2f4a'/%3E%3Cstop offset='1' stop-color='%234f2a5c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23a1)'/%3E%3Ccircle cx='500' cy='80' r='90' fill='%23ff5470' opacity='.18'/%3E%3Cpath d='M0 280 Q160 210 320 265 T640 240 L640 360 L0 360 Z' fill='%23101824'/%3E%3Cg stroke='%2338e0c8' stroke-width='2' opacity='.8'%3E%3Cpath d='M80 260 L170 200 L250 250' fill='none'/%3E%3Cpath d='M330 240 L420 180 L520 230' fill='none'/%3E%3C/g%3E%3Ccircle cx='170' cy='200' r='5' fill='%2338e0c8'/%3E%3Ccircle cx='420' cy='180' r='5' fill='%23f0b429'/%3E%3Ctext x='40' y='60' font-family='Arial' font-size='22' fill='%23eaf3ff' opacity='.85'%3ENIGHT WALKER%3C/text%3E%3C/svg%3E" alt="纪录短片《夜行者》封面：夜色山脊与路线光点" width="640" height="360" loading="lazy">
+          <span class="vd-vcover-badge">纪录片</span>
+          <span class="vd-vcover-time">42:18</span>
+        </div>
+        <div class="vd-vbody">
+          <h3>夜行者：凌晨四点的城市配送线</h3>
+          <p>跟拍三位夜班配送员一整夜，从仓库分拣到街角暖光，记录被白昼忽略的城市运转节奏。</p>
+          <div class="vd-tags"><span class="vd-tag">城市探索</span><span class="vd-tag">真实</span><span class="vd-tag">1080P</span></div>
+          <div class="vd-meta"><span>导演 <b>林岸</b></span><span>▶ <b>86.2万</b></span><span>♥ <b>3.4万</b></span></div>
+          <div class="vd-vactions">
+            <button class="vd-chip" data-vd-like>♥ 点赞</button>
+            <button class="vd-chip" data-vd-fav>☆ 收藏</button>
+            <button class="vd-chip" data-vd-share data-title="夜行者：凌晨四点的城市配送线">⤴ 分享</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="vd-vcard">
+        <div class="vd-vcover">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23f2ead9'/%3E%3Crect x='0' y='230' width='640' height='130' fill='%23d9c9a8'/%3E%3Ccircle cx='150' cy='120' r='70' fill='%23e8a33d' opacity='.85'/%3E%3Cpath d='M240 230 L300 130 L360 230 Z' fill='%233a5d4b'/%3E%3Cpath d='M330 230 L400 110 L470 230 Z' fill='%232c4a3b'/%3E%3Crect x='470' y='150' width='110' height='80' fill='%238b6c4a'/%3E%3Crect x='492' y='170' width='22' height='22' fill='%23f2ead9'/%3E%3Crect x='530' y='170' width='22' height='22' fill='%23f2ead9'/%3E%3Cpath d='M470 150 L525 108 L580 150 Z' fill='%235d4630'/%3E%3Ctext x='36' y='330' font-family='Arial' font-size='20' fill='%235d4630' opacity='.9'%3ESLOW AFTERNOON%3C/text%3E%3C/svg%3E" alt="生活方式短片《慢镜头午后》封面：田野、暖阳与木屋" width="640" height="360" loading="lazy">
+          <span class="vd-vcover-badge">生活方式</span>
+          <span class="vd-vcover-time">18:05</span>
+        </div>
+        <div class="vd-vbody">
+          <h3>慢镜头午后：一间乡村放映屋的重启</h3>
+          <p>老放映机重新转动，村民自带板凳来看露天电影，一段关于影像陪伴的小镇日常。</p>
+          <div class="vd-tags"><span class="vd-tag">治愈影像</span><span class="vd-tag">陪伴</span><span class="vd-tag">原创</span></div>
+          <div class="vd-meta"><span>作者 <b>苏禾</b></span><span>▶ <b>52.7万</b></span><span>♥ <b>2.1万</b></span></div>
+          <div class="vd-vactions">
+            <button class="vd-chip" data-vd-like>♥ 点赞</button>
+            <button class="vd-chip" data-vd-fav>☆ 收藏</button>
+            <button class="vd-chip" data-vd-share data-title="慢镜头午后：一间乡村放映屋的重启">⤴ 分享</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="vd-vcard">
+        <div class="vd-vcover">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%230e1420'/%3E%3Cg fill='none' stroke='%2338e0c8' stroke-width='1.5' opacity='.55'%3E%3Ccircle cx='320' cy='180' r='50'/%3E%3Ccircle cx='320' cy='180' r='90'/%3E%3Ccircle cx='320' cy='180' r='130'/%3E%3C/g%3E%3Ccircle cx='320' cy='180' r='16' fill='%23f0b429'/%3E%3Cg fill='%237cf0b8'%3E%3Crect x='120' y='180' width='70' height='6' rx='3'/%3E%3Crect x='450' y='180' width='70' height='6' rx='3'/%3E%3C/g%3E%3Crect x='250' y='300' width='140' height='8' rx='4' fill='%232b3a4e'/%3E%3Ctext x='36' y='52' font-family='Arial' font-size='20' fill='%2389c9ff' opacity='.9'%3ESIGNAL / SOUND%3C/text%3E%3C/svg%3E" alt="技术解析视频《一段配乐如何撑起一场戏》封面：声波与信号环" width="640" height="360" loading="lazy">
+          <span class="vd-vcover-badge">幕后</span>
+          <span class="vd-vcover-time">26:44</span>
+        </div>
+        <div class="vd-vbody">
+          <h3>创作幕后：一段配乐如何撑起一场戏</h3>
+          <p>从脚本标注到混音导出，拆解短片配乐的四个决策点，适合刚入门的影像创作者。</p>
+          <div class="vd-tags"><span class="vd-tag">教程干货</span><span class="vd-tag">剪辑</span><span class="vd-tag">专业</span></div>
+          <div class="vd-meta"><span>作者 <b>沈听</b></span><span>▶ <b>41.9万</b></span><span>♥ <b>1.8万</b></span></div>
+          <div class="vd-vactions">
+            <button class="vd-chip" data-vd-like>♥ 点赞</button>
+            <button class="vd-chip" data-vd-fav>☆ 收藏</button>
+            <button class="vd-chip" data-vd-share data-title="创作幕后：一段配乐如何撑起一场戏">⤴ 分享</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="vd-listbox" style="margin-top:18px">
+      <div class="vd-listrow">
+        <span class="vd-listrow-num">04</span>
+        <div>
+          <h3>老电影修复记：胶片的划痕去了哪里</h3>
+          <p>修复师逐帧讲解去噪、补色与音轨重建，一部 1980 年代影片的数字化全过程。</p>
+          <div class="vd-tags"><span class="vd-tag">知识科普</span><span class="vd-tag">匠心</span><span class="vd-tag">高清</span></div>
+        </div>
+        <div class="vd-listrow-side"><span>▶ 38.4万</span><span>时长 31:12</span></div>
+      </div>
+      <div class="vd-listrow">
+        <span class="vd-listrow-num">05</span>
+        <div>
+          <h3>把手机拍成电影机：5 个稳定器外的小技巧</h3>
+          <p>不依赖昂贵设备，用环境光、构图和走位拍出更有质感的画面，附实拍对照。</p>
+          <div class="vd-tags"><span class="vd-tag">实用技巧</span><span class="vd-tag">创意</span><span class="vd-tag">教程干货</span></div>
+        </div>
+        <div class="vd-listrow-side"><span>▶ 33.6万</span><span>时长 14:26</span></div>
+      </div>
+      <div class="vd-listrow">
+        <span class="vd-listrow-num">06</span>
+        <div>
+          <h3>影评人圆桌：今年最被低估的五部小成本片</h3>
+          <p>四位影评人就叙事节奏、表演密度与摄影语言展开讨论，观点鲜明，适合收藏复盘。</p>
+          <div class="vd-tags"><span class="vd-tag">行业观察</span><span class="vd-tag">文化访谈</span><span class="vd-tag">正版</span></div>
+        </div>
+        <div class="vd-listrow-side"><span>▶ 29.1万</span><span>时长 48:50</span></div>
+      </div>
+      <div class="vd-listrow">
+        <span class="vd-listrow-num">07</span>
+        <div>
+          <h3>社区共创企划：用 30 秒讲完你的一天</h3>
+          <p>来自 12 座城市的投稿剪辑，镜头里有通勤、有晚餐、也有深夜的台灯。</p>
+          <div class="vd-tags"><span class="vd-tag">日常记录</span><span class="vd-tag">社区</span><span class="vd-tag">多元</span></div>
+        </div>
+        <div class="vd-listrow-side"><span>▶ 25.8万</span><span>时长 09:37</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 专题企划 -->
+  <section class="vd-section" id="vdTopics" aria-labelledby="vdTopicsTitle">
+    <span class="vd-eyebrow">Series · 专题企划</span>
+    <h2 class="vd-h2" id="vdTopicsTitle">影视大全在线观看免费 <em>官方专题</em></h2>
+    <p class="vd-lead">专题由官方编辑部牵头，联合创作者共同完成。每个专题保持稳定更新，并开放社区投票决定下一期方向。</p>
+
+    <div class="vd-topics">
+      <article class="vd-topic">
+        <div class="vd-topic-head">
+          <h3>城市夜行者影像季</h3>
+          <span class="vd-topic-state">更新中 · 第 3 期</span>
+        </div>
+        <p class="vd-topic-desc">以夜班工作者为观察对象，呈现城市在熄灯之后仍然运转的另一面，包含纪录短片、访谈与声音采集。</p>
+        <ul class="vd-topic-items">
+          <li>凌晨四点的配送线：三位骑手的一夜</li>
+          <li>便利店常亮灯：收银台后的十二小时</li>
+          <li>末班地铁的清洁班组</li>
+          <li>夜行者声音档案：城市底噪采集实录</li>
+        </ul>
+        <figure class="vd-topic-figure">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 320'%3E%3Crect width='760' height='320' fill='%2310151f'/%3E%3Cg fill='%23f0b429' opacity='.75'%3E%3Ccircle cx='110' cy='70' r='8'/%3E%3Ccircle cx='650' cy='60' r='6'/%3E%3C/g%3E%3Cg fill='%23223047'%3E%3Crect x='0' y='180' width='760' height='140'/%3E%3C/g%3E%3Cg fill='%231a2740'%3E%3Crect x='60' y='110' width='90' height='130'/%3E%3Crect x='180' y='80' width='70' height='160'/%3E%3Crect x='280' y='130' width='100' height='110'/%3E%3Crect x='420' y='96' width='80' height='144'/%3E%3Crect x='530' y='126' width='120' height='114'/%3E%3C/g%3E%3Cg fill='%2338e0c8' opacity='.85'%3E%3Crect x='76' y='128' width='10' height='10'/%3E%3Crect x='100' y='128' width='10' height='10'/%3E%3Crect x='196' y='100' width='10' height='10'/%3E%3Crect x='220' y='124' width='10' height='10'/%3E%3Crect x='296' y='150' width='10' height='10'/%3E%3Crect x='436' y='118' width='10' height='10'/%3E%3Crect x='552' y='146' width='10' height='10'/%3E%3Crect x='576' y='170' width='10' height='10'/%3E%3C/g%3E%3Cpath d='M0 262 Q190 226 380 254 T760 240' stroke='%2338e0c8' stroke-width='2' fill='none' opacity='.6'/%3E%3Ctext x='30' y='44' font-family='Arial' font-size='20' fill='%239ad9cf'%3ENIGHT ROUTES%3C/text%3E%3C/svg%3E" alt="专题「城市夜行者影像季」配图：夜晚楼宇亮灯与路线曲线" width="760" height="320" loading="lazy">
+        </figure>
+      </article>
+
+      <article class="vd-topic">
+        <div class="vd-topic-head">
+          <h3>修复影史：老片新生计划</h3>
+          <span class="vd-topic-state">已上线 · 6 部</span>
+        </div>
+        <p class="vd-topic-desc">联合资料馆与修复团队，把珍贵影像以高清形式重新带回观众视野，并配套幕后讲解。</p>
+        <ul class="vd-topic-items">
+          <li>胶片划痕与噪点：修复的技术边界</li>
+          <li>色彩还原中的主观与客观</li>
+          <li>旧片字幕重制的排版考量</li>
+        </ul>
+      </article>
+
+      <article class="vd-topic">
+        <div class="vd-topic-head">
+          <h3>三十秒的一天 · 社区共创</h3>
+          <span class="vd-topic-state">征稿中 · 报名开放</span>
+        </div>
+        <p class="vd-topic-desc">面向所有用户开放的短影像企划，上传 30 秒日常片段，通过投票选出成片镜头。</p>
+        <ul class="vd-topic-items">
+          <li>投稿须知与拍摄建议</li>
+          <li>上期成片：十二座城市的傍晚</li>
+          <li>社区投票入口与规则说明</li>
+        </ul>
+      </article>
+
+      <article class="vd-topic">
+        <div class="vd-topic-head">
+          <h3>类型片入门课</h3>
+          <span class="vd-topic-state">连载中 · 9 讲</span>
+        </div>
+        <p class="vd-topic-desc">从悬疑、公路到家庭题材，用可复用的拆解方法理解类型叙事，适合边看边做笔记。</p>
+        <ul class="vd-topic-items">
+          <li>悬疑片的线索布置与回收</li>
+          <li>公路片的空间推进逻辑</li>
+          <li>家庭题材中的沉默与留白</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- 关键词解析（SEO 深度内容） -->
+  <section class="vd-section" id="vdInsight" aria-labelledby="vdInsightTitle">
+    <span class="vd-eyebrow">Insight · 深度解析</span>
+    <h2 class="vd-h2" id="vdInsightTitle">关于「影视大全在线观看免费」的 <em>完整解读</em></h2>
+    <p class="vd-lead">这一部分从产品、内容与社区三个维度，说明影视大全在线观看免费官方网站如何把关键词背后的需求落到具体体验上。</p>
+
+    <div class="vd-essay">
+      <h3>一、从片库结构看：为什么「全」不等于堆量</h3>
+      <p>
+        很多用户搜索影视大全在线观看免费，真正想解决的并不是「有没有片」，而是「能不能快速找到一部今晚看得下去的片」。
+        因此平台把片库拆成三层：第一层是院线电影与热门剧集，强调时效与画质；第二层是纪录片、短片与独立影像，承担内容生态的多样性；
+        第三层是社区共创与官方企划，承担持续运营与新鲜感。三层之间通过标签互相打通，用户在任意一部影片下都能看到同主题的纪录片、同一位创作者的幕后访谈，
+        以及社区围绕这部作品产生的讨论。这样做的好处是，片库规模增长不会带来检索负担，反而让每一次点击都更容易走到下一步。
+      </p>
+      <p>
+        在画质与版权上，影视大全在线观看免费坚持高清、正版、专业三条底线。所有上架内容都需要完成来源核验与版权登记，重点影片提供多码率自适应，
+        网络波动时优先保证播放流畅而不是盲目拉高清晰度。我们希望用户形成一种预期：在这个官方平台上看到的片源，清晰度与来源都经得起检验。
+      </p>
+
+      <h3>二、从观看体验看：播放器与检索的细节设计</h3>
+      <p>
+        观看体验的决定因素往往藏在细节里。我们把播放页拆成「画面、信息、讨论」三栏：画面区域默认 16:9，可切换全屏与剧场模式；
+        信息栏呈现影片简介、创作者、标签与相关条目；讨论区支持短评、评分与引用摘录。检索侧则提供片名、创作者、标签三类入口，
+        并在搜索框中给出实时提示，例如输入「夜」时优先出现夜行者专题与相关纪录短片，而不是把全部含该字的条目一次性堆出。
+      </p>
+      <p>
+        对于时间碎片化的用户，平台提供「片单模式」：把一部长片拆成可分段观看的章节，配上时长提示与停点建议。
+        这并不是把内容切碎，而是承认真实观看场景的多样性——地铁上的十分钟、睡前的二十分钟、周末的完整两小时，都值得被认真对待。
+        这也是我们理解「在线观看免费」的方式：免费不是降低标准的理由，而是让更多人有机会进入影像世界的入口。
+      </p>
+      <div class="vd-inlinequote">
+        影视大全在线观看免费的核心理念只有一句话：让好内容被看见，让看见的人愿意留下来。
+      </div>
+
+      <h3>三、从社区与创作者看：内容生态如何持续运转</h3>
+      <p>
+        平台上的创作者大致分三类：纪录片与短片导演、技术与幕后类作者、影评与访谈类作者。官方为三类作者提供不同的支持方式：
+        导演类获得拍摄企划与展映资源，技术类获得录制与剪辑工具支持，影评类获得首映与资料馆的采访机会。每位创作者都有独立主页，
+        展示擅长领域、作品数、粉丝数与简介，用户可以直接关注并在新片上线时收到提醒。
+      </p>
+      <p>
+        社区部分我们刻意保留了一些「慢」的设计：一条短评发布后不会被无限放大，而是需要经过其他用户的认可才会出现在更显眼的位置；
+        投票决定专题方向时，每人每期限投一次，避免刷票影响结果。这些设计让讨论更接近真实观影后的交流，而不是情绪化的即时反馈。
+        长期来看，这种克制反而提升了口碑的稳定度，也让「值得信赖」成为平台被反复提及的关键词。
+      </p>
+
+      <h3>四、从品牌责任看：为什么强调真实与陪伴</h3>
+      <p>
+        影视内容天然带有情绪影响力，因此平台在选题上有一条内部共识：不放大焦虑，不制造对立，不以猎奇替代叙述。
+        我们更愿意把镜头交给普通人，记录他们在日常里如何解决具体问题——一次通勤、一顿晚饭、一场和家人的对话。
+        这种取向让内容看起来不够「炸」，但它经得起反复观看，也更容易激发社区里的真实交流。
+      </p>
+      <p>
+        与此同时，影视大全在线观看免费官方网站也在承担行业层面的责任：为新人创作者提供比赛与展映机会，为老片修复提供展示窗口，
+        为地方影像档案提供长期存档。这些工作短期内不直接产生流量，但它们构成品牌故事的骨架。
+        当我们说「持续运营」，指的不是定期更换首页，而是这些看起来缓慢、却真正累积影响力的事情。
+      </p>
+      <p>
+        对用户而言，理解这一层之后，关键词就不再只是搜索动作，而是一次选择：选择一个有版权意识、有内容标准、有社区温度的官方平台。
+        这也是我们持续打磨片库、播放器与讨论区的全部理由。
+      </p>
+    </div>
+  </section>
+
+  <!-- S5 创作者矩阵：小型头像列表 -->
+  <section class="vd-section" id="vdCreators" aria-labelledby="vdCreatorsTitle">
+    <span class="vd-eyebrow">Creators · 创作者矩阵</span>
+    <h2 class="vd-h2" id="vdCreatorsTitle">影视大全在线观看免费 <em>合作创作者</em></h2>
+    <p class="vd-lead">他们是平台内容生态的核心：有人记录城市，有人拆解技术，有人把访谈做成长期栏目。点开档案可以看到完整简介。</p>
+
+    <div class="vd-authors" id="vdAuthorList">
+      <article class="vd-author">
+        <span class="vd-avatar" style="background:linear-gradient(135deg,#38e0c8,#7cf0b8)" aria-hidden="true">林</span>
+        <div>
+          <div class="vd-author-name">林岸 <span>纪录片导演</span></div>
+          <div class="vd-author-info">擅长领域：城市纪实 / 人物跟拍 ｜ 作品 46 部 ｜ 粉丝 28.6 万</div>
+          <p class="vd-author-bio">长期拍摄城市夜班人群，习惯用长镜头等待真实发生。作品《夜行者》系列在平台累计播放超过三百万，拍摄笔记以克制、具体著称。</p>
+        </div>
+        <button class="vd-author-btn" data-vd-author="林岸：纪录片导演，擅长城市纪实与人物跟拍，强调长镜头与真实等待，代表作为夜行者系列。">查看档案</button>
+      </article>
+
+      <article class="vd-author">
+        <span class="vd-avatar" style="background:linear-gradient(135deg,#f0b429,#ffd97a)" aria-hidden="true">苏</span>
+        <div>
+          <div class="vd-author-name">苏禾 <span>生活方式作者</span></div>
+          <div class="vd-author-info">擅长领域：日常记录 / 治愈影像 ｜ 作品 88 部 ｜ 粉丝 33.2 万</div>
+          <p class="vd-author-bio">把镜头对准小镇、厨房与旧物，认为影像的价值在于让人慢下来。她的系列短片多在自然光下完成，剪辑节奏舒缓，评论区常被称为「电子壁炉」。</p>
+        </div>
+        <button class="vd-author-btn" data-vd-author="苏禾：生活方式作者，专注日常记录与治愈影像，偏爱自然光与舒缓节奏，代表作为慢镜头午后系列。">查看档案</button>
+      </article>
+
+      <article class="vd-author">
+        <span class="vd-avatar" style="background:linear-gradient(135deg,#7aa7ff,#c3d6ff)" aria-hidden="true">沈</span>
+        <div>
+          <div class="vd-author-name">沈听 <span>幕后技术作者</span></div>
+          <div class="vd-author-info">擅长领域：剪辑 / 声音设计 ｜ 作品 120 部 ｜ 粉丝 41.5 万</div>
+          <p class="vd-author-bio">从事声音后期十年，擅长把复杂流程拆成可执行步骤。他的教程视频通常配有工程文件与参数表，被不少影像课程作为参考材料引用。</p>
+        </div>
+        <button class="vd-author-btn" data-vd-author="沈听：幕后技术作者，十年声音后期经验，擅长把剪辑与混音流程拆解为可执行步骤，教程配有工程参数。">查看档案</button>
+      </article>
+
+      <article class="vd-author">
+        <span class="vd-avatar" style="background:linear-gradient(135deg,#ff8fa3,#ffc2cd)" aria-hidden="true">陈</span>
+        <div>
+          <div class="vd-author-name">陈叔同 <span>影评人</span></div>
+          <div class="vd-author-info">擅长领域：文化访谈 / 行业观察 ｜ 作品 64 部 ｜ 粉丝 22.9 万</div>
+          <p class="vd-author-bio">写影评十五年，关注类型叙事与表演细节。他主持的圆桌栏目坚持不追热点，而是围绕一部作品做充分讨论，观点鲜明但少有情绪化表达。</p>
+        </div>
+        <button class="vd-author-btn" data-vd-author="陈叔同：影评人，关注类型叙事与表演细节，主持影评人圆桌栏目，主张围绕单部作品进行充分讨论。">查看档案</button>
+      </article>
+
+      <article class="vd-author">
+        <span class="vd-avatar" style="background:linear-gradient(135deg,#9b8cff,#d5ccff)" aria-hidden="true">何</span>
+        <div>
+          <div class="vd-author-name">何以安 <span>动画短片作者</span></div>
+          <div class="vd-author-info">擅长领域：动画 / 实验影像 ｜ 作品 31 部 ｜ 粉丝 16.4 万</div>
+          <p class="vd-author-bio">以手绘动画记录情绪碎片，作品色彩大胆、叙事跳跃。她坚持每部短片公开分镜稿，希望让更多年轻创作者看到一部动画如何从草稿变成成片。</p>
+        </div>
+        <button class="vd-author-btn" data-vd-author="何以安：动画短片作者，以手绘动画记录情绪碎片，坚持公开分镜稿，作品色彩大胆、叙事跳跃。">查看档案</button>
+      </article>
+
+      <article class="vd-author">
+        <span class="vd-avatar" style="background:linear-gradient(135deg,#6fd08c,#bdf3c9)" aria-hidden="true">周</span>
+        <div>
+          <div class="vd-author-name">周南野 <span>户外影像作者</span></div>
+          <div class="vd-author-info">擅长领域：户外记录 / 自然科普 ｜ 作品 52 部 ｜ 粉丝 19.7 万</div>
+          <p class="vd-author-bio">常年在山野与海岸线之间拍摄，强调安全与环保并重。他的作品以稳定构图和现场收音见长，也常在视频中科普地貌变化与动植物知识。</p>
+        </div>
+        <button class="vd-author-btn" data-vd-author="周南野：户外影像作者，拍摄山野与海岸线，强调安全与环保，作品以稳定构图与现场收音见长，兼做自然科普。">查看档案</button>
+      </article>
+    </div>
+  </section>
+
+  <!-- S6 评论：双列短评 + 评分摘要 -->
+  <section class="vd-section" id="vdReviews" aria-labelledby="vdReviewsTitle">
+    <span class="vd-eyebrow">Reviews · 用户口碑</span>
+    <h2 class="vd-h2" id="vdReviewsTitle">影视大全在线观看免费 <em>真实评价</em></h2>
+    <p class="vd-lead">评分摘要：综合口碑 9.4 分（满分 10 分），画质满意度 96%，片库更新及时性 93%，社区氛围 91%。以下为社区短评摘录。</p>
+
+    <div class="vd-comments">
+      <article class="vd-comment">
+        <div class="vd-comment-top"><span class="vd-cav" style="background:#38e0c8">阿</span><b>阿榆</b><span>11·20</span></div>
+        <p>难得有一个平台把纪录片和短片放在这么显眼的位置，昨晚一口气看了三集夜行者，运镜非常克制，没有刻意煽情。</p>
+        <div class="vd-stars">★★★★★</div>
+      </article>
+      <article class="vd-comment">
+        <div class="vd-comment-top"><span class="vd-cav" style="background:#f0b429">柯</span><b>柯南不看片</b><span>11·19</span></div>
+        <p>搜索框提示做得不错，输关键词直接出专题，不用翻好几页。希望之后能加上按片长筛选。</p>
+        <div class="vd-stars">★★★★☆</div>
+      </article>
+      <article class="vd-comment">
+        <div class="vd-comment-top"><span class="vd-cav" style="background:#7aa7ff">小</span><b>小满</b><span>11·18</span></div>
+        <p>沈听的配乐那期我反复看了两遍，把工程文件思路讲清楚的人真的不多，对新剪辑师非常友好。</p>
+        <div class="vd-stars">★★★★★</div>
+      </article>
+      <article class="vd-comment">
+        <div class="vd-comment-top"><span class="vd-cav" style="background:#ff8fa3">木</span><b>木木夕</b><span>11·18</span></div>
+        <p>画质稳定，投屏也没出现卡顿。就是有些老片字幕字号偏小，希望修复计划里可以一起处理。</p>
+        <div class="vd-stars">★★★★☆</div>
+      </article>
+      <article class="vd-comment">
+        <div class="vd-comment-top"><span class="vd-cav" style="background:#9b8cff">清</span><b>清风渡</b><span>11·17</span></div>
+        <p>周末参加了三十秒一天的投稿，很快就收到回复，编辑给了很具体的修改建议，这在同类平台里很少见。</p>
+        <div class="vd-stars">★★★★★</div>
+      </article>
+      <article class="vd-comment">
+        <div class="vd-comment-top"><span class="vd-cav" style="background:#6fd08c">南</span><b>南风知我意</b><span>11·16</span></div>
+        <p>圆桌栏目是我每周固定的收听项目，讨论有分寸，不为了观点冲突而制造对立。</p>
+        <div class="vd-stars">★★★★★</div>
+      </article>
+      <article class="vd-comment">
+        <div class="vd-comment-top"><span class="vd-cav" style="background:#38e0c8">夏</span><b>夏天的尾巴</b><span>11·15</span></div>
+        <p>作为家长，比较放心让孩子看这里的科普短片，没有夸张标题党，介绍也写得清楚。</p>
+        <div class="vd-stars">★★★★☆</div>
+      </article>
+      <article class="vd-comment">
+        <div class="vd-comment-top"><span class="vd-cav" style="background:#f0b429">一</span><b>一只观鸟人</b><span>11·14</span></div>
+        <p>周南野的海岸线那期把潮汐时间拍得很准确，评论区还有人补充了观测点，社区氛围确实不错。</p>
+        <div class="vd-stars">★★★★★</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- S7 辅助区：企业动态 + 合作墙 + FAQ + 联系投稿 -->
+  <section class="vd-section" id="vdNews" aria-labelledby="vdNewsTitle">
+    <span class="vd-eyebrow">Newsroom · 企业动态</span>
+    <h2 class="vd-h2" id="vdNewsTitle">影视大全在线观看免费 <em>官方发布</em></h2>
+    <p class="vd-lead">企业动态由官方团队发布，涵盖片库更新、产品迭代与社区活动，欢迎关注后第一时间收到通知。</p>
+
+    <div class="vd-news">
+      <div class="vd-newsrow">
+        <time>2026·11·21</time>
+        <div>
+          <h3>冬季影展征片启动，新增短片与纪录片两个单元</h3>
+          <p>面向创作者开放报名，初审通过的作品将获得官方展映与高清修复支持。</p>
+        </div>
+      </div>
+      <div class="vd-newsrow">
+        <time>2026·11·19</time>
+        <div>
+          <h3>播放器 4.2 版本上线：剧场模式与分段观看</h3>
+          <p>优化了弱网环境下的码率切换逻辑，并新增片单分段功能，长片观看更灵活。</p>
+        </div>
+      </div>
+      <div class="vd-newsrow">
+        <time>2026·11·16</time>
+        <div>
+          <h3>与三家资料馆达成影像修复合作</h3>
+          <p>首批六部老片已完成数字化修复，配套幕后讲解视频同步上线。</p>
+        </div>
+      </div>
+      <div class="vd-newsrow">
+        <time>2026·11·12</time>
+        <div>
+          <h3>社区共创企划「三十秒的一天」第二期开放投稿</h3>
+          <p>本期主题为「傍晚」，投稿截止后由社区投票产生成片镜头顺序。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="vd-section" id="vdPartners" aria-labelledby="vdPartnersTitle">
+    <span class="vd-eyebrow">Partners · 合作品牌</span>
+    <h2 class="vd-h2" id="vdPartnersTitle">与我们一起构建 <em>品质内容生态</em></h2>
+    <p class="vd-lead">从设备、制作到展映，合作伙伴与我们共同支撑影视大全在线观看免费的长期运营。</p>
+    <div class="vd-partners">
+      <div class="vd-partner"><b>光影器材</b><span>拍摄设备支持</span></div>
+      <div class="vd-partner"><b>回声混音</b><span>声音后期协作</span></div>
+      <div class="vd-partner"><b>城市资料馆</b><span>影像档案共建</span></div>
+      <div class="vd-partner"><b>青年影展</b><span>展映与比赛</span></div>
+    </div>
+  </section>
+
+  <section class="vd-section" id="vdFaq" aria-labelledby="vdFaqTitle">
+    <span class="vd-eyebrow">Help · 常见问题</span>
+    <h2 class="vd-h2" id="vdFaqTitle">关于影视大全在线观看免费的 <em>使用问答</em></h2>
+    <p class="vd-lead">如果你在使用中遇到问题，可以先在这里查找答案，也可以在联系区提交反馈。</p>
+
+    <div class="vd-faq">
+      <details open>
+        <summary>观看影视大全在线观看免费的内容需要注册吗？</summary>
+        <p>浏览片库与观看大部分公开内容无需注册。收藏、点赞、评论与投稿需要登录账号，便于同步你的观看记录与创作档案。</p>
+      </details>
+      <details>
+        <summary>平台内容是否为正版授权？</summary>
+        <p>官方片库采取来源核验与版权登记流程，上架前会确认授权范围。修复类老片与资料馆合作项目会标注来源与合作方。</p>
+      </details>
+      <details>
+        <summary>为什么有些影片只有标清版本？</summary>
+        <p>部分历史影像原始素材分辨率有限，我们优先保证画面完整与音画同步，不做过度拉伸。修复完成后会逐步替换为高清版本。</p>
+      </details>
+      <details>
+        <summary>如何参与社区共创或投稿？</summary>
+        <p>可在页面中的投稿入口填写作品信息与简介，编辑部会在五个工作日内回复。专题征稿期间，通过初审的作品会获得额外展映资源。</p>
+      </details>
+      <details>
+        <summary>创作者主页的作品数多久更新一次？</summary>
+        <p>作品数随新片上架实时更新，粉丝数与播放数据按小时统计。数据异常时会进行人工复核。</p>
+      </details>
+      <details>
+        <summary>可以在移动端观看吗？</summary>
+        <p>页面已适配移动端，导航折叠、搜索与片单功能均可使用。建议在稳定网络下选择自适应码率以获得更顺畅的体验。</p>
+      </details>
+      <details>
+        <summary>遇到片源加载失败怎么办？</summary>
+        <p>可先尝试刷新或切换清晰度。如果问题持续，请通过反馈入口提交片名与时间，技术团队会核查线路并修复。</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="vd-section" id="vdConnect" aria-labelledby="vdConnectTitle">
+    <span class="vd-eyebrow">Contact · 联系与投稿</span>
+    <h2 class="vd-h2" id="vdConnectTitle">把你的影像，交给 <em>官方发布</em></h2>
+    <p class="vd-lead">我们欢迎纪录片、短片、动画与影评类内容。请通过以下入口联系我们，或在页面右上角分享给朋友。</p>
+    <div class="vd-connect">
+      <div class="vd-connect-card">
+        <h3>作品投稿</h3>
+        <p>填写片名、时长与简介，附上可访问的样片链接，编辑部会给出具体反馈。</p>
+        <button class="vd-mini-link" type="button" data-vd-open="submit">前往投稿 →</button>
+      </div>
+      <div class="vd-connect-card">
+        <h3>问题反馈</h3>
+        <p>片源、播放、字幕或页面问题都可以提交，我们会按主题归类处理。</p>
+        <button class="vd-mini-link" type="button" data-vd-open="feedback">提交反馈 →</button>
+      </div>
+      <div class="vd-connect-card">
+        <h3>分享给朋友</h3>
+        <p>复制官方页面链接，或在社交平台分享你正在看的片单。</p>
+        <button class="vd-mini-link" type="button" data-vd-share data-title="影视大全在线观看免费 官方网站">复制链接 →</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="vd-footer">
+  <div class="vd-footer-inner">
+    <div>
+      <div class="vd-logo-text" style="font-size:17px;margin-bottom:10px">影视大全 · 官方网站</div>
+      <p>影视大全在线观看免费官方网站，深耕影视内容领域，聚合高清正版电影、剧集、纪录片与原创短片，持续运营值得信赖的内容生态。</p>
+      <p style="margin-top:8px">品牌口号：真实 · 陪伴 · 力量</p>
+    </div>
+    <div>
+      <h4>内容导航</h4>
+      <ul>
+        <li><a href="#vdVideos">片库精选</a></li>
+        <li><a href="#vdTopics">专题企划</a></li>
+        <li><a href="#vdCreators">创作者矩阵</a></li>
+        <li><a href="#vdReviews">用户口碑</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>官方信息</h4>
+      <ul>
+        <li><a href="#vdNews">企业动态</a></li>
+        <li><a href="#vdPartners">合作伙伴</a></li>
+        <li><a href="#vdFaq">帮助中心</a></li>
+        <li><a href="#vdConnect">联系投稿</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>社区规范</h4>
+      <ul>
+        <li>尊重原创与正版授权</li>
+        <li>评论保持真实与友善</li>
+        <li>投稿请注明素材来源</li>
+        <li>未成年人建议在监护下观看</li>
+      </ul>
+    </div>
+  </div>
+  <div class="vd-footer-bottom">
+    <span>© 2026 影视大全在线观看免费 官方网站 · 版权所有</span>
+    <span>持续运营中 · 企业级内容服务平台</span>
+  </div>
+</footer>
+
+<button class="vd-totop" id="vdToTop" aria-label="回到顶部">↑</button>
+<div class="vd-toast" id="vdToast" role="status" aria-live="polite"></div>
+
+<div class="vd-modal" id="vdModal" role="dialog" aria-modal="true" aria-labelledby="vdModalTitle">
+  <div class="vd-modal-card">
+    <h3 id="vdModalTitle">投稿作品</h3>
+    <p id="vdModalDesc">填写基本信息，编辑部会在五个工作日内回复。</p>
+    <form id="vdModalForm">
+      <label for="vdFieldA">片名 / 主题</label>
+      <input id="vdFieldA" type="text" placeholder="例如：夜行者·第三期" required>
+      <label for="vdFieldB">联系邮箱</label>
+      <input id="vdFieldB" type="email" placeholder="name@example.com" required>
+      <label for="vdFieldC">作品简介</label>
+      <textarea id="vdFieldC" rows="3" placeholder="内容类型、时长、创作背景"></textarea>
+      <div class="vd-modal-actions">
+        <button class="vd-btn vd-btn-ghost" type="button" id="vdModalCancel">取消</button>
+        <button class="vd-btn vd-btn-primary" type="submit">提交</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var toastEl = document.getElementById('vdToast');
+  var toastTimer = null;
+  function toast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('is-show'); }, 2200);
+  }
+
+  /* 公告条关闭 */
+  var annClose = document.getElementById('vdAnnounceClose');
+  var announce = document.getElementById('vdAnnounce');
+  if(annClose && announce){
+    annClose.addEventListener('click', function(){
+      announce.style.display = 'none';
+      document.documentElement.style.setProperty('--vhead-h','64px');
+    });
+  }
+
+  /* 移动端导航折叠 */
+  var burger = document.getElementById('vdBurger');
+  var mobileNav = document.getElementById('vdMobileNav');
+  if(burger && mobileNav){
+    burger.addEventListener('click', function(){
+      var open = mobileNav.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.textContent = open ? '✕' : '☰';
+    });
+    mobileNav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        mobileNav.classList.remove('is-open');
+        burger.setAttribute('aria-expanded','false');
+        burger.textContent = '☰';
+      });
+    });
+  }
+
+  /* 搜索提示 */
+  var sInput = document.getElementById('vdSearchInput');
+  var sBtn = document.getElementById('vdSearchBtn');
+  var sTip = document.getElementById('vdSearchTip');
+  var hotMap = {
+    '夜':'为你找到专题「城市夜行者影像季」与 4 部纪录短片',
+    '修复':'匹配到「修复影史：老片新生计划」6 部高清修复片',
+    '配乐':'推荐沈听的创作幕后教程，含混音参数表',
+    '城市':'共 27 条城市探索类内容，含 12 个社区投稿',
+    '动画':'何以安动画短片合集，共 31 部',
+    '户外':'周南野自然影像 14 部，含海岸线系列'
+  };
+  function showTip(text){
+    if(!sTip) return;
+    sTip.textContent = text;
+    sTip.classList.add('is-show');
+    clearTimeout(showTip._t);
+    showTip._t = setTimeout(function(){ sTip.classList.remove('is-show'); }, 2600);
+  }
+  function doSearch(){
+    var q = (sInput && sInput.value || '').trim();
+    if(!q){ toast('请输入片名、创作者或标签'); return; }
+    var hit = null;
+    for(var k in hotMap){ if(q.indexOf(k) !== -1){ hit = hotMap[k]; break; } }
+    showTip(hit ? hit : '已按「' + q + '」检索片库，共找到相关条目，正在为你排序');
+    toast('搜索：' + q);
+  }
+  if(sBtn) sBtn.addEventListener('click', doSearch);
+  if(sInput) sInput.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ e.preventDefault(); doSearch(); } });
+
+  /* 点赞 / 收藏（事件委托） */
+  document.addEventListener('click', function(e){
+    var like = e.target.closest('[data-vd-like]');
+    if(like){
+      var liked = like.classList.toggle('is-liked');
+      like.textContent = liked ? '♥ 已赞' : '♥ 点赞';
+      toast(liked ? '已点赞，感谢支持' : '已取消点赞');
+      return;
+    }
+    var fav = e.target.closest('[data-vd-fav]');
+    if(fav){
+      var faved = fav.classList.toggle('is-faved');
+      fav.textContent = faved ? '★ 已收藏' : '☆ 收藏';
+      toast(faved ? '已加入收藏片单' : '已从收藏片单移除');
+      return;
+    }
+  });
+
+  /* 作者档案弹窗（复用模态框） */
+  var modal = document.getElementById('vdModal');
+  var modalTitle = document.getElementById('vdModalTitle');
+  var modalDesc = document.getElementById('vdModalDesc');
+  var modalForm = document.getElementById('vdModalForm');
+  var modalCancel = document.getElementById('vdModalCancel');
+  var modalMode = 'submit';
+
+  function openModal(mode, title, desc){
+    modalMode = mode;
+    if(mode === 'author'){
+      modalTitle.textContent = title || '创作者档案';
+      modalDesc.textContent = desc || '';
+      if(modalForm) modalForm.style.display = 'none';
+    } else {
+      modalTitle.textContent = mode === 'feedback' ? '问题反馈' : '投稿作品';
+      modalDesc.textContent = mode === 'feedback'
+        ? '描述你遇到的问题，附上片名与时间，处理会更高效。'
+        : '填写基本信息，编辑部会在五个工作日内回复。';
+      if(modalForm) modalForm.style.display = 'block';
+    }
+    modal.classList.add('is-open');
+  }
+  function closeModal(){
+    modal.classList.remove('is-open');
+  }
+  document.addEventListener('click', function(e){
+    var openBtn = e.target.closest('[data-vd-open]');
+    if(openBtn){
+      openModal(openBtn.getAttribute('data-vd-open'));
+      return;
+    }
+    var authorBtn = e.target.closest('[data-vd-author]');
+    if(authorBtn){
+      openModal('author', authorBtn.closest('.vd-author').querySelector('.vd-author-name').textContent.trim(), authorBtn.getAttribute('data-vd-author'));
+      return;
+    }
+  });
+  if(modalCancel) modalCancel.addEventListener('click', closeModal);
+  if(modal) modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeModal(); });
+  if(modalForm) modalForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    closeModal();
+    toast(modalMode === 'feedback' ? '反馈已提交，感谢你的帮助' : '投稿已提交，请留意邮箱回复');
+    modalForm.reset();
+  });
+
+  /* 复制链接 / 分享</div> */
+  document.addEventListener('click', function(e){
+    var share = e.target.closest('[data-vd-share]');
+    if(!share) return;
+    var title = share.getAttribute('data-title') || '影视大全在线观看免费 官方网站';
+    var url = window.location.href;
+    function fallback(){
+      try{
+        var ta = document.createElement('textarea');
+        ta.value = url;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        toast('链接已复制，可分享给朋友');
+      }catch(err){
+        toast('请手动复制地址栏链接分享');
+      }
+    }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url).then(function(){
+        toast('「' + title + '」链接已复制');
+      }).catch(fallback);
+    } else {
+      fallback();
+    }
+  });
+
+  /* 回到顶部 */
+  var toTop = document.getElementById('vdToTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 520){ toTop.classList.add('is-show'); }
+    else { toTop.classList.remove('is-show'); }
+  }, {passive:true});
+  if(toTop) toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 导航高亮 */
+  var navLinks = document.querySelectorAll('.vd-nav a');
+  navLinks.forEach(function(a){
+    a.addEventListener('click', function(){
+      navLinks.forEach(function(x){ x.classList.remove('is-active'); });
+      a.classList.add('is-active');
+    });
+  });
+})();
+</script>
+</body>
+          </html>
